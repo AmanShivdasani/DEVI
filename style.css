@@ -784,7 +784,6 @@ p{
     padding: 30px;
 }
 .contact-form{
-    width: 100%;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -1036,6 +1035,18 @@ footer{
     .contact{
         padding: 100px 20px;
     }
+    .contact-form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form input:nth-child(3){
+        grid-column: 1/2;
+    }
+    textarea{
+        grid-column: 1/2;
+    }
+    .submit{
+        font-size: 24px;
+    }
     
     .footer-container{
         grid-template-columns: repeat(3,1fr);
@@ -1093,7 +1104,6 @@ footer{
         padding: 20px 40px;
     }
     .contact{
-        display: none;
         font-size: 32px;
     }
     .contact-left{
@@ -1134,4 +1144,11 @@ footer{
     .feature-desc{
         height:fit-content;
     }
+    .contact {
+        padding: 10px;
+    }
+    .contact .features-head{
+        font-size: 24px;
+    }
+    
 }
